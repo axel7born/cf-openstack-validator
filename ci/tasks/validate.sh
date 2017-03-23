@@ -28,8 +28,6 @@ chmod 400 cf-validator.rsa_id
 ci/assets/config_renderer/render validator.template.yml > validator.yml
 cat validator.yml
 
-cp extensions/dummy_extension_spec.sample.rb extensions/dummy_extension_spec.rb
-
 bundle install --path .bundle
 
 ./validate -s ~/stemcell.tgz -c validator.yml

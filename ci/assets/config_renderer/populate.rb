@@ -69,6 +69,8 @@ def populate(config, context)
       'custom-config-key' => 'custom-config-value'
   }
 
+  config['extensions']['paths'].unshift('./sample_extensions/')
+
   config
 end
 
