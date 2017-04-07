@@ -1,4 +1,4 @@
-describe 'Flavors' do
+fdescribe 'Flavors' do
 
   let(:compute) {
     Validator::Api::FogOpenStack.compute
