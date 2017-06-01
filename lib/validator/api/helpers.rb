@@ -18,7 +18,7 @@ module Validator
         az = config.default_vm_type_cloud_properties['availability_zone']
         flavor = Validator::Api::FogOpenStack.compute.flavors.find { |f| f.name == flavor_name }
         server_params = {
-            name: 'validator-test-vm',
+            name: 'validator-test-vm-2',
             flavor_ref: flavor.id,
             config_drive: !!config.openstack['config_drive'],
             nics:[{'net_id' => config.validator['network_id']}]
